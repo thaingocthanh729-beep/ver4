@@ -1,2 +1,0 @@
-# hellobabay
-# hellokitty
